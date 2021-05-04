@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF90B47E2641A40000B254A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90B47D2641A40000B254A7 /* AppDelegate.swift */; };
+		EF90B4802641A40000B254A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90B47F2641A40000B254A7 /* SceneDelegate.swift */; };
+		EF90B4822641A40000B254A7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90B4812641A40000B254A7 /* HomeViewController.swift */; };
+		EF90B4852641A40000B254A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF90B4832641A40000B254A7 /* Main.storyboard */; };
+		EF90B4872641A40300B254A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF90B4862641A40300B254A7 /* Assets.xcassets */; };
+		EF90B48A2641A40300B254A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF90B4882641A40300B254A7 /* LaunchScreen.storyboard */; };
+		EFA19C732641A76D00693069 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA19C722641A76D00693069 /* BaseViewController.swift */; };
+		EFA19C752641A7C200693069 /* VCFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA19C742641A7C200693069 /* VCFactory.swift */; };
+		EFA19C782641A80700693069 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA19C772641A80700693069 /* UIFont+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF90B47A2641A40000B254A7 /* TortaCafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TortaCafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF90B47D2641A40000B254A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF90B47F2641A40000B254A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EF90B4812641A40000B254A7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EF90B4842641A40000B254A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF90B4862641A40300B254A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF90B4892641A40300B254A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF90B48B2641A40300B254A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFA19C722641A76D00693069 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EFA19C742641A7C200693069 /* VCFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCFactory.swift; sourceTree = "<group>"; };
+		EFA19C772641A80700693069 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF90B4772641A40000B254A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF90B4712641A40000B254A7 = {
+			isa = PBXGroup;
+			children = (
+				EF90B47C2641A40000B254A7 /* TortaCafe */,
+				EF90B47B2641A40000B254A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF90B47B2641A40000B254A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF90B47A2641A40000B254A7 /* TortaCafe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF90B47C2641A40000B254A7 /* TortaCafe */ = {
+			isa = PBXGroup;
+			children = (
+				EFA19C762641A7ED00693069 /* Extensions */,
+				EFA19C712641A71B00693069 /* Application */,
+				EF90B4812641A40000B254A7 /* HomeViewController.swift */,
+				EFA19C722641A76D00693069 /* BaseViewController.swift */,
+				EF90B4832641A40000B254A7 /* Main.storyboard */,
+				EF90B4862641A40300B254A7 /* Assets.xcassets */,
+				EF90B4882641A40300B254A7 /* LaunchScreen.storyboard */,
+				EF90B48B2641A40300B254A7 /* Info.plist */,
+				EFA19C742641A7C200693069 /* VCFactory.swift */,
+			);
+			path = TortaCafe;
+			sourceTree = "<group>";
+		};
+		EFA19C712641A71B00693069 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EF90B47D2641A40000B254A7 /* AppDelegate.swift */,
+				EF90B47F2641A40000B254A7 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EFA19C762641A7ED00693069 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EFA19C772641A80700693069 /* UIFont+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF90B4792641A40000B254A7 /* TortaCafe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF90B48E2641A40300B254A7 /* Build configuration list for PBXNativeTarget "TortaCafe" */;
+			buildPhases = (
+				EF90B4762641A40000B254A7 /* Sources */,
+				EF90B4772641A40000B254A7 /* Frameworks */,
+				EF90B4782641A40000B254A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TortaCafe;
+			productName = TortaCafe;
+			productReference = EF90B47A2641A40000B254A7 /* TortaCafe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF90B4722641A40000B254A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EF90B4792641A40000B254A7 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = EF90B4752641A40000B254A7 /* Build configuration list for PBXProject "TortaCafe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF90B4712641A40000B254A7;
+			productRefGroup = EF90B47B2641A40000B254A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF90B4792641A40000B254A7 /* TortaCafe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF90B4782641A40000B254A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF90B48A2641A40300B254A7 /* LaunchScreen.storyboard in Resources */,
+				EF90B4872641A40300B254A7 /* Assets.xcassets in Resources */,
+				EF90B4852641A40000B254A7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF90B4762641A40000B254A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA19C782641A80700693069 /* UIFont+Extension.swift in Sources */,
+				EF90B4822641A40000B254A7 /* HomeViewController.swift in Sources */,
+				EFA19C732641A76D00693069 /* BaseViewController.swift in Sources */,
+				EF90B47E2641A40000B254A7 /* AppDelegate.swift in Sources */,
+				EF90B4802641A40000B254A7 /* SceneDelegate.swift in Sources */,
+				EFA19C752641A7C200693069 /* VCFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF90B4832641A40000B254A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF90B4842641A40000B254A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF90B4882641A40300B254A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF90B4892641A40300B254A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF90B48C2641A40300B254A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF90B48D2641A40300B254A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF90B48F2641A40300B254A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXR8P4SVD4;
+				INFOPLIST_FILE = TortaCafe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dsheikherev.TortaCafe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EF90B4902641A40300B254A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXR8P4SVD4;
+				INFOPLIST_FILE = TortaCafe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dsheikherev.TortaCafe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF90B4752641A40000B254A7 /* Build configuration list for PBXProject "TortaCafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF90B48C2641A40300B254A7 /* Debug */,
+				EF90B48D2641A40300B254A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF90B48E2641A40300B254A7 /* Build configuration list for PBXNativeTarget "TortaCafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF90B48F2641A40300B254A7 /* Debug */,
+				EF90B4902641A40300B254A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF90B4722641A40000B254A7 /* Project object */;
+}
