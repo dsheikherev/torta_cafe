@@ -20,14 +20,7 @@ class BaseViewController: UIViewController {
     func commonInit() {}
     
     func setTabBarImage(imageName: String, title: String) {
-        let image: UIImage?
-        
-        if #available(iOS 13.0, *) {
-            image = UIImage(systemName: imageName, withConfiguration: UIImage.SymbolConfiguration(scale: .large))
-        } else {
-            image = UIImage(named: "qrcode")
-        }
-        
+        let image: UIImage? = makeSymbolImage(imageName: imageName)
         tabBarItem = UITabBarItem(title: title, image: image, tag: 0)
     }
 }
