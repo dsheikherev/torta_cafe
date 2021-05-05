@@ -14,6 +14,12 @@ class HomeViewController: BaseViewController {
     
     let scrollView = UIScrollView()
     let stackView = UIStackView()
+    let callUsFloatingButton = UIButton()
+    
+    struct CallUsFloatingButton {
+        static let height: CGFloat = 60
+        static let width: CGFloat = 170
+    }
     
     let fakeText = ["Lorem ipsum dolor sit amet",
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa lorem, egestas ut egestas ut, auctor a diam. Nam id mi feugiat, varius ante at, cursus leo."]
@@ -35,6 +41,7 @@ class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        style()
         layout()
         setupScrollView()
     }
@@ -43,17 +50,28 @@ class HomeViewController: BaseViewController {
         setTabBarImage(imageName: "house.fill", title: "Home")
     }
     
+    private func style() {
+        callUsFloatingButton.setTitle("Call Us", for: .normal)
+        callUsFloatingButton.setTitleColor(.white, for: .normal)
+        callUsFloatingButton.titleLabel?.minimumScaleFactor = 0.5
+        callUsFloatingButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .title3)
+        callUsFloatingButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        callUsFloatingButton.backgroundColor = .lightGreen
+        callUsFloatingButton.layer.cornerRadius = CallUsFloatingButton.height / 2
+    }
+    
     private func layout() {
         headerView.translatesAutoresizingMaskIntoConstraints = false
-        
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         stackView.translatesAutoresizingMaskIntoConstraints = false
+        callUsFloatingButton.translatesAutoresizingMaskIntoConstraints = false
         
         stackView.axis = .vertical
         stackView.spacing = 8
         
         view.addSubview(headerView)
         view.addSubview(scrollView)
+        view.addSubview(callUsFloatingButton)
         
         scrollView.addSubview(stackView)
         
@@ -80,6 +98,11 @@ class HomeViewController: BaseViewController {
             stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
             stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
             stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            
+            callUsFloatingButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            callUsFloatingButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16),
+            callUsFloatingButton.widthAnchor.constraint(equalToConstant: CallUsFloatingButton.width),
+            callUsFloatingButton.heightAnchor.constraint(equalToConstant: CallUsFloatingButton.height),
         ])
     }
     
