@@ -25,24 +25,19 @@ class BalanceView: UIView {
     }
     
     func style() {
-        pointsLabel.translatesAutoresizingMaskIntoConstraints = false
         pointsLabel.font = UIFont.preferredFont(forTextStyle: .largeTitle).bold()
         pointsLabel.text = "12"
         
-        starView.translatesAutoresizingMaskIntoConstraints = false
         starView.tintColor = .starYellow
         starView.contentMode = .scaleAspectFit
         
-        starBalanceLabel.translatesAutoresizingMaskIntoConstraints = false
         starBalanceLabel.font = UIFont.preferredFont(forTextStyle: .footnote)
         starBalanceLabel.textColor = ColorCompatibility.label
         starBalanceLabel.text = "Star balance"
     }
     
     func layout() {
-        addSubview(pointsLabel)
-        addSubview(starView)
-        addSubview(starBalanceLabel)
+        addSubviewsUsingAutoLayout(pointsLabel, starView, starBalanceLabel)
         
         NSLayoutConstraint.activate([
             pointsLabel.topAnchor.constraint(equalTo: topAnchor),

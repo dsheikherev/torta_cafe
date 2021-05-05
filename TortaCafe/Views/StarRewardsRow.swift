@@ -27,9 +27,6 @@ class StarRewardsRow: UIView {
     }
     
     func style() {
-        starAndPoints.translatesAutoresizingMaskIntoConstraints = false
-        
-        descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
         descriptionLabel.font = UIFont.preferredFont(forTextStyle: .footnote)
         descriptionLabel.numberOfLines = 0
         descriptionLabel.lineBreakMode = .byWordWrapping
@@ -37,8 +34,7 @@ class StarRewardsRow: UIView {
     }
     
     func layout() {
-        addSubview(starAndPoints)
-        addSubview(descriptionLabel)
+        addSubviewsUsingAutoLayout(starAndPoints, descriptionLabel)
         
         NSLayoutConstraint.activate([
             starAndPoints.topAnchor.constraint(equalTo: topAnchor),

@@ -29,7 +29,6 @@ class HomeHeaderView: UIView {
     
     func makeHeaderButton(withImage name: String, title: String) -> UIButton {
         let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
         
         let image = makeSymbolImage(imageName: name)
         button.setImage(image, for: .normal)
@@ -48,7 +47,6 @@ class HomeHeaderView: UIView {
     func style() {
         backgroundColor = ColorCompatibility.systemBackground
         
-        greetings.translatesAutoresizingMaskIntoConstraints = false
         greetings.font = UIFont.preferredFont(forTextStyle: .largeTitle)
         greetings.text = "Good morning, Denis ☀️"
         greetings.numberOfLines = 0
@@ -56,8 +54,7 @@ class HomeHeaderView: UIView {
     }
     
     func layout() {
-        addSubview(greetings)
-        addSubview(ordersHistoryButton)
+        addSubviewsUsingAutoLayout(greetings, ordersHistoryButton)
         
         NSLayoutConstraint.activate([
             greetings.topAnchor.constraint(equalToSystemSpacingBelow: topAnchor, multiplier: 1),

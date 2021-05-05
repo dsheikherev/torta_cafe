@@ -28,14 +28,8 @@ class TileViewController: UIViewController {
         layout()
     }
     
-    private func style() {
-        
-    }
-    
     private func layout() {
-        tileView.translatesAutoresizingMaskIntoConstraints = false
-        
-        view.addSubview(tileView)
+        view.addSubviewsUsingAutoLayout(tileView)
         
         NSLayoutConstraint.activate([
             tileView.topAnchor.constraint(equalTo: view.topAnchor),

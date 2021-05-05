@@ -40,25 +40,24 @@ class StarRewardsView: UIView {
         backgroundColor = ColorCompatibility.systemFill
         layer.cornerRadius = 10
         
-        stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.spacing = 26
         stackView.isLayoutMarginsRelativeArrangement = true
         stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 16, leading: 16, bottom: 16, trailing: -16)
         
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.preferredFont(forTextStyle: .title3).bold()
         label.text = "Rewards you can get with Stars"
     }
     
     private func layout() {
+        label.translatesAutoresizingMaskIntoConstraints = false
         stackView.addArrangedSubview(label)
         
         for reward in rewards {
             stackView.addArrangedSubview(StarRewardsRow(numberOfPoints: reward.numberOfPoints, description: reward.description))
         }
         
-        addSubview(stackView)
+        addSubviewsUsingAutoLayout(stackView)
         
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: topAnchor),

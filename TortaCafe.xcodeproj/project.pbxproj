@@ -29,6 +29,7 @@
 		EFA19C902641B94000693069 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA19C8F2641B94000693069 /* BalanceView.swift */; };
 		EFA19C922641B99E00693069 /* UIViewsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA19C912641B99E00693069 /* UIViewsFactory.swift */; };
 		EFA19C952641BA0C00693069 /* ColorCompatibility in Frameworks */ = {isa = PBXBuildFile; productRef = EFA19C942641BA0C00693069 /* ColorCompatibility */; };
+		EFA19C972642307300693069 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA19C962642307300693069 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		EFA19C8D2641B92B00693069 /* StarAndPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarAndPointsView.swift; sourceTree = "<group>"; };
 		EFA19C8F2641B94000693069 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 		EFA19C912641B99E00693069 /* UIViewsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewsFactory.swift; sourceTree = "<group>"; };
+		EFA19C962642307300693069 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				EFA19C772641A80700693069 /* UIFont+Extension.swift */,
 				EFA19C852641B66C00693069 /* UIColor+Extension.swift */,
 				EFA19C912641B99E00693069 /* UIViewsFactory.swift */,
+				EFA19C962642307300693069 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				EFA19C8E2641B92B00693069 /* StarAndPointsView.swift in Sources */,
 				EFA19C802641B51400693069 /* TileView.swift in Sources */,
 				EFA19C822641B5D300693069 /* RewardsViewController.swift in Sources */,
+				EFA19C972642307300693069 /* UIView+Extension.swift in Sources */,
 				EFA19C7E2641B4F400693069 /* HomeHeaderView.swift in Sources */,
 				EF90B47E2641A40000B254A7 /* AppDelegate.swift in Sources */,
 				EF90B4802641A40000B254A7 /* SceneDelegate.swift in Sources */,

@@ -40,11 +40,9 @@ class RewardsGraphView: UIView {
     //    }
     
     func layout() {
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        
         drawRewardsGraph()
         
-        addSubview(imageView)
+        addSubviewsUsingAutoLayout(imageView)
         
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: topAnchor),

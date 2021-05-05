@@ -38,11 +38,7 @@ class RewardsTileView: UIView {
     }
     
     func layout() {
-        addSubview(balanceView)
-        addSubview(rewardsButton)
-        addSubview(rewardsGraphView)
-        addSubview(starRewardsView)
-        addSubview(detailsButton)
+        addSubviewsUsingAutoLayout(balanceView, rewardsButton, rewardsGraphView, starRewardsView, detailsButton)
         
         heightConstraint = starRewardsView.heightAnchor.constraint(equalToConstant: 0)
         
@@ -71,10 +67,6 @@ class RewardsTileView: UIView {
     }
     
     func style() {
-        balanceView.translatesAutoresizingMaskIntoConstraints = false
-        rewardsGraphView.translatesAutoresizingMaskIntoConstraints = false
-        starRewardsView.translatesAutoresizingMaskIntoConstraints = false
-        
         makeRewardsOptionButton()
         
         detailsButton = makeClearButton(withText: "Details")
@@ -82,7 +74,6 @@ class RewardsTileView: UIView {
     }
     
     func makeRewardsOptionButton() {
-        rewardsButton.translatesAutoresizingMaskIntoConstraints = false
         rewardsButton.addTarget(self, action: #selector(rewardOptionsTapped), for: .primaryActionTriggered)
         
         let image = makeSymbolImage(imageName: "chevron.down", scale: .small)

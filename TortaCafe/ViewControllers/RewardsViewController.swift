@@ -14,9 +14,7 @@ class RewardsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        rewardsTileView.translatesAutoresizingMaskIntoConstraints = false
-        
-        view.addSubview(rewardsTileView)
+        view.addSubviewsUsingAutoLayout(rewardsTileView)
         
         NSLayoutConstraint.activate([
             rewardsTileView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),

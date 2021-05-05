@@ -39,10 +39,10 @@ class TileView: UIView {
         
         shadowLayer.path = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).cgPath
         shadowLayer.fillColor = fillColor.cgColor
-        shadowLayer.shadowColor = UIColor.black.cgColor
+        shadowLayer.shadowColor = ColorCompatibility.label.cgColor
         shadowLayer.shadowPath = shadowLayer.path
         shadowLayer.shadowOffset = CGSize(width: 0.0, height: 1.0)
-        shadowLayer.shadowOpacity = 0.2
+        shadowLayer.shadowOpacity = 0.3
         shadowLayer.shadowRadius = 1
         
         layer.insertSublayer(shadowLayer, at: 0)
@@ -51,15 +51,12 @@ class TileView: UIView {
     func style() {
         layer.cornerRadius = cornerRadius
         
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
         
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.font = UIFont.preferredFont(forTextStyle: .title3).bold()
         titleLabel.textColor = ColorCompatibility.label
         
-        subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
         subtitleLabel.font = UIFont.preferredFont(forTextStyle: .footnote)
         subtitleLabel.numberOfLines = 0
         subtitleLabel.lineBreakMode = .byWordWrapping
@@ -68,17 +65,15 @@ class TileView: UIView {
     }
     
     func layout() {
-        addSubview(imageView)
-        addSubview(titleLabel)
-        addSubview(subtitleLabel)
-        addSubview(ctaButton)
+        addSubviewsUsingAutoLayout(imageView, titleLabel, subtitleLabel, ctaButton)
         
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: topAnchor),
-            imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            imageView.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 2),
+            imageView.trailingAnchor.constraint(equalToSystemSpacingAfter: trailingAnchor, multiplier: 2),
+            imageView.heightAnchor.constraint(lessThanOrEqualToConstant: 300),
             
-            titleLabel.topAnchor.constraint(equalToSystemSpacingBelow: imageView.bottomAnchor, multiplier: 2),
+            titleLabel.topAnchor.constraint(equalToSystemSpacingBelow: imageView.bottomAnchor, multiplier: 1),
             titleLabel.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 2),
             trailingAnchor.constraint(equalToSystemSpacingAfter: titleLabel.trailingAnchor, multiplier: 2),
             

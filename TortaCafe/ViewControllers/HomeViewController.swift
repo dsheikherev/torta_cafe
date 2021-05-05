@@ -61,19 +61,12 @@ class HomeViewController: BaseViewController {
     }
     
     private func layout() {
-        headerView.translatesAutoresizingMaskIntoConstraints = false
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        callUsFloatingButton.translatesAutoresizingMaskIntoConstraints = false
-        
         stackView.axis = .vertical
         stackView.spacing = 8
         
-        view.addSubview(headerView)
-        view.addSubview(scrollView)
-        view.addSubview(callUsFloatingButton)
+        view.addSubviewsUsingAutoLayout(headerView, scrollView, callUsFloatingButton)
         
-        scrollView.addSubview(stackView)
+        scrollView.addSubviewsUsingAutoLayout(stackView)
         
         for tile in tiles {
             addChild(tile)

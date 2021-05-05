@@ -23,18 +23,15 @@ class StarAndPointsView: UIView {
     }
     
     func style() {
-        pointsLabel.translatesAutoresizingMaskIntoConstraints = false
         pointsLabel.font = UIFont.preferredFont(forTextStyle: .callout).bold()
         pointsLabel.textAlignment = .right
         
-        starView.translatesAutoresizingMaskIntoConstraints = false
         starView.tintColor = .starYellow
         starView.contentMode = .scaleAspectFit
     }
     
     func layout() {
-        addSubview(pointsLabel)
-        addSubview(starView)
+        addSubviewsUsingAutoLayout(pointsLabel, starView)
         
         NSLayoutConstraint.activate([
             pointsLabel.topAnchor.constraint(equalTo: topAnchor, constant: 2),
